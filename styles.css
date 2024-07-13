@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(/fonts/source_code_pro/Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(/fonts/source_code_pro/Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(/fonts/source_code_pro/Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(/fonts/source_code_pro/BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(/fonts/source_code_pro/ExtraBold.ttf);
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(/fonts/source_code_pro/ExtraBoldItalic.ttf);
+  font-weight: bolder;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(/fonts/source_code_pro/Light.ttf);
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(/fonts/source_code_pro/LightItalic.ttf);
+  font-weight: lighter;
+  font-style: italic;
+}
+
+* {
+  font-family: "Source Code Pro";
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+.Title {
+  align-content: center;
+  display: inline-flex;
+  font-size: 2em;
+  color: #ff9a00;
+}
+
+.Title img {
+  object-fit: contain;
+  width: 74px;
+  height: 160px;
+  padding: 0px;
+}
+
+footer {
+  text-align: center;
+  background-color: mediumturquoise;
+}
