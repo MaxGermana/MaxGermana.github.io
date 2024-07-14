@@ -48,47 +48,52 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#Getting Started">Getting Started</a>
       <ul>
-        <li><a href="#windows/mac-os">Windows/Mac OS</a></li>
+        <li><a href="#Windows">Windows</a></li>
         <ul>
-          <li><a href="#Windows/Mac OS Prerequisites">Prerequisites</a></li>
-          <li><a href="#running">Running</a></li>
+          <li><a href="#Windows Prerequisites">Prerequisites</a></li>
+          <li><a href="#Windows Running">Running</a></li>
         </ul>
-        <li><a href="#linux">Linux</a></li>
+        <li><a href="#Mac OS">Mac OS</a></li>
+        <ul>
+          <li><a href="#Mac OS Prerequisites">Prerequisites</a></li>
+          <li><a href="#Mac OS Running">Running</a></li>
+        </ul>
+        <li><a href="#Linux">Linux</a></li>
         <ul>
           <li><a href="#Linux Prerequisites">Prerequisites</a></li>
-          <li><a href="#running">Running</a></li>
+          <li><a href="#Linux Running">Running</a></li>
         </ul>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
 <!-- GETTING STARTED -->
 
-## Getting Started
+<h2 id="Getting Started">Getting Started</h2>
 
 To get a local copy up and running follow these steps.
 
-### Windows/Mac OS
+<h3 id="Windows">Windows</h3>
 
-<h4 id="Windows/Mac OS Prerequisites">Prerequisites</h4>
+<h4 id="Windows Prerequisites">Prerequisites</h4>
 
-1. Install `git`
+1. Install `serve`
    ```shell
-   sudo apt install git
+   npm install -g serve
    ```
-2. Clone the repository
+2. Install `git`
+   ```shell
+   sudo dnf install git-all
+   ```
+3. Clone the repository
    ```shell
    git clone https://github.com/MaxGermana/MaxGermana.github.io.git
    ```
 
-#### Windows/Mac OS Running
+<h4 id="Windows Running">Running</h4>
 
 1. Navigate to the repository
    ```shell
@@ -96,21 +101,67 @@ To get a local copy up and running follow these steps.
    ```
 2. Run the file
    ```shell
-   pushd index.html; python3 -m http.server 9999; popd;
+   serve
    ```
 3. Open the website
-   The Terminal output should look something like this:
+   The Command Line output should look like this:
 
    > ```shell
-   > bash: pushd: index.html: Not a directory
-   > Serving HTTP on 0.0.0.0 port 9999 (http://0.0.0.0:9999/) ...
+   >   ┌────────────────────────────────────────────┐
+   >   │                                            │
+   >   │   Serving!                                 │
+   >   │                                            │
+   >   │   - Local:            http://localhost:5000│
+   >   │   - On Your Network:  http://192.168.0.5:5000│
+   >   │                                            │
+   >   │   Copied local address to clipboard!       │
+   >   │                                            │
+   >   └────────────────────────────────────────────┘
    > ```
 
-   Click on the http://0.0.0.0:9999/ in the Terminal (or the one right here)
+   Click on the http://localhost:5000 in the Command Line (or the one right here)
 
 4. You're done! You can even edit the `.html`, `.css`, `.js`, and other files and play around with the website!
 
-### Linux
+<h3 id="Mac OS">Mac OS</h3>
+
+<h4 id="Mac OS Prerequisites">Prerequisites</h4>
+
+1. Install `Homebrew`
+   ```shell
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+2. Install `git`
+   ```shell
+   brew install git
+   ```
+3. Clone the repository
+   ```shell
+   git clone https://github.com/MaxGermana/MaxGermana.github.io.git
+   ```
+
+<h4 id="Mac OS Running">Running</h4>
+
+1. Navigate to the repository
+   ```shell
+   cd <file-path>/MaxGermana.github.io
+   ```
+2. Run the file
+   ```shell
+   python3 -m http.server 8000
+   ```
+3. Open the website
+   The Terminal output should look like this:
+
+   > ```shell
+   > Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+   > ```
+
+   Click on the http://0.0.0.0:8000/ in the Terminal (or the one right here)
+
+4. You're done! You can even edit the `.html`, `.css`, `.js`, and other files and play around with the website!
+
+<h3 id="Linux">Linux</h3>
 
 <h4 id="Linux Prerequisites">Prerequisites</h4>
 
@@ -123,7 +174,7 @@ To get a local copy up and running follow these steps.
    git clone https://github.com/MaxGermana/MaxGermana.github.io.git
    ```
 
-#### Linux Running
+<h4 id="Linux Running">Running</h4>
 
 1. Navigate to the repository
    ```shell
@@ -134,66 +185,15 @@ To get a local copy up and running follow these steps.
    pushd index.html; python3 -m http.server 9999; popd;
    ```
 3. Open the website
-   The Terminal output should look something like this:
+   The Terminal output should look like this:
 
    > ```shell
-   > bash: pushd: index.html: Not a directory
    > Serving HTTP on 0.0.0.0 port 9999 (http://0.0.0.0:9999/) ...
    > ```
 
    Click on the http://0.0.0.0:9999/ in the Terminal (or the one right here)
 
 4. You're done! You can even edit the `.html`, `.css`, `.js`, and other files and play around with the website!
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
-
-See the [open issues](https://github.com/MaxGermana/MaxGermana.github.io/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-- []()
-- []()
-- []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
