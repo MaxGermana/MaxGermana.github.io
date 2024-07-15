@@ -1,3 +1,3 @@
 function dosomething() {
-  document.getElementById("changing text").innerHTML = "something different";
+  document.getElementById("changing text").innerHTML = "something different yet again";
 }
