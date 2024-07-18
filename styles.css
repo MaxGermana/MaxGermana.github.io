@@ -64,6 +64,7 @@ header {
   width: 100%;
   text-align: center;
   background-color: white;
+  z-index: 1;
 }
 
 .Title {
@@ -79,8 +80,14 @@ header {
   height: 160px;
   padding: 0px;
 }
+#Scroll {
+  width: 100%;
+  position: absolute;
+  top: 241px;
+}
 
 footer {
+  width:  100%;
   text-align: center;
   background-color: mediumturquoise;
 }
